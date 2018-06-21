@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>comm.mate</groupId>
-  <artifactId>maven-web-project11</artifactId>
+  <groupId>comm1.mt</groupId> 
+  <artifactId>maven-web-project-test</artifactId> 
   <packaging>war</packaging>
-  <version>2.0-SNAPSHOT</version> 
-<!-- <version>2.3</version>-->
-  <name>Maven Web Project11</name>
+ <version>1.0-SNAPSHOT</version>
+ <!--version>7.7</version-->
+  <name>Maven Web Project</name>
   <description>Maven Web Project for Java</description>
 
  <organization>
@@ -97,7 +97,7 @@
 			<version>${spring.version}</version>
 		</dependency>
   </dependencies>
-  <distributionManagement>
+ <distributionManagement>
      <repository>
        <id>nexus</id>
        <name>Harathi Release Nexus Repository</name>
@@ -108,7 +108,21 @@
        <name>Harathi Snapshots Nexus Repository </name>
        <url>http://localhost:8087/repository/harathi-snapshot/</url>
      </snapshotRepository>
-   </distributionManagement>
+   </distributionManagement> 
+   
+   
+    <!--distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>DESKTOP-7NUR38H-releases</name>
+        <url>http://localhost:8085/artifactory/maven-repo-jfrog</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>DESKTOP-7NUR38H-snapshots</name>
+        <url>http://localhost:8085/artifactory/maven-repo-jfrog</url>
+    </snapshotRepository>
+</distributionManagement-->
 
   <build>
     <plugins>
